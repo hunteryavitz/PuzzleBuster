@@ -21,7 +21,7 @@ public class BirdSinging {
 
 		if (isSummer) {	maxTemp += 10; }
 		
-		if ((temp >= minTemp) && (temp <= maxTemp)) { return true; }
+		return ((temp >= minTemp) && (temp <= maxTemp));
 		
 		return false;		
 	}
