@@ -16,14 +16,8 @@ public class BirdSinging {
 
 	public static boolean birdsSinging(int temp, boolean isSummer) {
 		
-		int minTemp = 60;
-		int maxTemp = 90;
+		return (isSummer) ? ((temp >= 60) && (temp <= 100)) : ((temp >= 60) && (temp <= 90));
 
-		if (isSummer) {	maxTemp += 10; }
-		
-		return ((temp >= minTemp) && (temp <= maxTemp));
-		
-		return false;		
 	}
 
 }
